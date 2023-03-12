@@ -33,10 +33,9 @@ print(what)
 
 #3
 
-value1 = input("Wprowadź pierwszą liczbę: ")
-value2 = input("Wprowadź drugą liczbę: ")
-value1 = float(value1)
-value2 = float(value2)
+value1 = float(input("Wprowadź pierwszą liczbę: "))
+value2 = float(input("Wprowadź drugą liczbę: "))
+
 print("Suma: ", value1 + value2,
       "\nRóżnica: ", value1 - value2,
       "\nIloczyn: ", value1 * value2)
