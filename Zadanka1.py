@@ -96,7 +96,7 @@ def is_even(value):
 
 #8.
 
-def my_pow(val, power)
+def my_pow(val, power):
       val = int(input("Podaj liczbę do spotęgowania: "))
       power = int(input("Podaj potęgę: "))
       return val ** power
