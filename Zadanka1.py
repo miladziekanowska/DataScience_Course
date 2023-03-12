@@ -9,13 +9,13 @@
 x = 4
 y = 5
 
-print("Dodawanie: ", x + y, "\n",
-      "Odejmowanie: ", x - y, "\n",
-      "Mnożenie: ", x * y, "\n",
-      "Dzielenie: ", x / y, "\n",
-      "Potęgowanie: ", x ** y, "\n",
-      "Dzielenie bez reszty: ", x // y, "\n",
-      "Reszta z dzielenia: ", x % y)
+print("Dodawanie: ", x + y,
+      "\nOdejmowanie: ", x - y,
+      "\nMnożenie: ", x * y,
+      "\nDzielenie: ", x / y,
+      "\nPotęgowanie: ", x ** y,
+      "\nDzielenie bez reszty: ", x // y,
+      "\nReszta z dzielenia: ", x % y)
 
 #2
 
