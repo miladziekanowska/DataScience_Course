@@ -74,3 +74,29 @@ elif entry % 3 == 0:
 elif entry % 5 == 0:
       print("Paf")
 else: print("Twoja liczba to: ", entry)
+
+# 7. Napisz funkcję is_even, która przyjmuje jeden argument
+#     A następnie zwraca True - jeżeli liczba jest parzysta,
+#     w przeciwnym razie False
+#
+#     Wykorzystaj nową funkcję do poprzedniego zadania
+#     (tam gdzie użytkownik podawał liczbę, a następnie otrzymywał komunikat
+#      liczba parzysta/nieparzysta)
+
+# 8. Napisz funkcję my_pow, która pozwoli na zwrócenie potęgi wybranej liczby
+#     do wybranej potęgi. Liczbe oraz potegę podajemy jako argumenty do tej fukncji
+
+#7.
+def is_even(value):
+      value = int(input("Wprowadź liczbę: "))
+      if number % 2 == 0:
+            value("Twoja liczba jest parzysta.")
+      else:
+            value("Twoja liczba jest nieparzysta.")
+
+#8.
+
+def my_pow(val, power)
+      val = int(input("Podaj liczbę do spotęgowania: "))
+      power = int(input("Podaj potęgę: "))
+      return val ** power
