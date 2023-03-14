@@ -31,14 +31,37 @@ elif percentage < 60 and percentage >= 50:
 else: print("2.0")
 
 
-def show_tem_status(value):
-    value = input("Wprowadź swoją temperaturę: ")
-    if value < 36.4:
+#2
+
+def show_tem_status(temp):
+    if temp < 36.4:
         return "wychłodzenie"
-    elif value >= 36.4 and value <= 36.8:
+    elif temp >= 36.4 and temp <= 36.8:
         return "norma"
-    elif value >= 36.9 and value <= 37.0:
+    elif temp > 36.8 and temp <= 37.0:
         return "stan podgorączkowy"
     else:
         return "gorączka"
 
+
+# 3. Napisz funkcję, która zwróci "odwrotny" indeks wybranego indeksu i tekstu
+#     Przyjmowane argumenty:
+#     - łańcuch znakowy
+#     - indeks (z przedziału podanego tekstu)
+#     Zwraca:
+#     - odwrotny indeks
+#
+#  Przykładowo:
+#  fun("Ala ma kota", 11) zwraca -1
+#  fun("HELLO", 2) zwraca -3
+
+#3.
+
+def minus_index(words, index):
+    if  0 <= index <= (len(words) - 1):
+        return index - len(words)
+    else: return -999
+
+
+print(minus_index("guma", 2))
+print(minus_index("Dzień dobry", 4))
