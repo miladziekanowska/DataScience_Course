@@ -7,3 +7,8 @@ Python w Data Science 12.03.2023
 Python w Data Science 14.03.2023
 1. Kolekcje danych (data structures)
 2. Działania na stringach
+3. Listy i działania na listach
+
+Python w Data Science 15.03.2023
+1. Słowniki (dictionaries) i krotki (tuple)
+2. 
