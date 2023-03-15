@@ -65,3 +65,18 @@ def minus_index(words, index):
 
 print(minus_index("guma", 2))
 print(minus_index("Dzień dobry", 4))
+
+# 4. Napisz funkcję manage_list, która przyjmuje dwa argumenty:
+#     - Opcja: dodaj, usun
+#     - Wartość
+# Jeżeli wybraliśmy dodaj, wykonany jest append
+# Jeżeli usun - wykonujemy pop()
+# Funkcja niczego nie zwraca
+
+#4.
+def manage_list(command, value):
+    if command == "dodaj":
+         list.append(value)
+    elif command == "usun":
+         list.pop()
+
