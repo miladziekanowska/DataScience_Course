@@ -81,3 +81,5 @@ print(f"The sum of the digits in your number is {digits_sum}.")
 # Następnie program zwraca informacje ile łańcuchów znakowych jest unikatowych. :)
 # Przykładowo: użytkownik podał n = 3. Następnie podał trzy łańcuchy znakowe:
 # Kot, Pies, Kot. Program zwróci informacje, że ilość UNIKATOWYCH łańuchów znakowych to: 2.
+
+def unique_identifier(n: int, )
