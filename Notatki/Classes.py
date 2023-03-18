@@ -47,7 +47,7 @@ class Student:
         return f"{self.name} {self.surname.lower()} - {self.mean}"
 
     def __int__(self):
-        return len(self.grades)
+        return int(sum(self.grades))
 
     def __float__(self):
         return self.mean
