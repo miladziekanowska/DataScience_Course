@@ -16,7 +16,7 @@ def C_to_K(celcius: float) -> float:
 
 def words_counter(sentence: str) -> dict:
     many_words = {}
-    for w in sentence.split(" "):
+    for w in sentence.lower().split(" "):
         many_words[w] = count(w)
 
 # Zadanie 03
@@ -28,14 +28,9 @@ def greatest_number(a: int, b: int, c: int):
     for n in [a, b, c]:
         if a == b or a == c or b == c:
             return "Some of the values are the same."
-        elif a == b == c:
+        elif a == b and b == c:
             return "All of the values are the same."
-    largest = None
-    for n in [a, b, c]:
-        if largest is None:
-            largest = n
-        elif largest < n:
-            largest = n
+    largest = max([a, b, c])
         return f"The largest value is {largest}."
 
 
@@ -48,14 +43,12 @@ value = int(input("Enter an integer value: "))
 list_of_values = []
 the_sum = 0
 
-while True:
+while n >= 0:
     list_of_values.append(value)
     the_sum = sum(list_of_values)
     value = int(input("Enter another integer value: "))
 
-    if value < 0:
-        print(f"The total of your inputs is {the_sum}.")
-        break
+print(f"The total of your inputs is {the_sum}.")
 
 
 # Zadanie 05
@@ -67,8 +60,8 @@ while True:
 # Następnie program zwraca sumę CYFR z których składa się podana liczba.
 # Przykładowo: użytkownik podaje 1307, program zwraca 11 (1+3+0+7). Podpowiedź: konwersja na str
 
-number = int(input("Enter your number: "))
-sum_of_digits = sum(int(digit) for digit in str(number))
+number = input("Enter your number: ")
+sum_of_digits = sum(int(digit) for digit in number)
 print(f"The sum of the digits in your number is {sum_of_digits}.")
 
 # Zadanie 07
