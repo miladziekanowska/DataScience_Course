@@ -67,13 +67,9 @@ while True:
 # Następnie program zwraca sumę CYFR z których składa się podana liczba.
 # Przykładowo: użytkownik podaje 1307, program zwraca 11 (1+3+0+7). Podpowiedź: konwersja na str
 
-number = str(input("Enter your number: "))
-digits_sum = 0
-for i in number.split():
-    digits_sum = sum(int(i))
-print(f"The sum of the digits in your number is {digits_sum}.")
-
-
+number = int(input("Enter your number: "))
+sum_of_digits = sum(int(digit) for digit in str(number))
+print(f"The sum of the digits in your number is {sum_of_digits}.")
 
 # Zadanie 07
 # Napisać program, gdzie użytkownik podaje n łańcuchów znakowych
@@ -82,4 +78,22 @@ print(f"The sum of the digits in your number is {digits_sum}.")
 # Przykładowo: użytkownik podał n = 3. Następnie podał trzy łańcuchy znakowe:
 # Kot, Pies, Kot. Program zwróci informacje, że ilość UNIKATOWYCH łańuchów znakowych to: 2.
 
-def unique_identifier(n: int, )
+n = int(input("Enter the number of strings: "))
+all_strings = []
+strings_dict = {}
+unique_list = []
+unique = 0
+
+while len(all_strings) < n:
+    strings = str(input("Input your string here: "))
+    all_strings.append(strings)
+    if len(all_strings) == n:
+        for s in all_strings:
+            if s not in strings_dict.keys():
+                strings_dict[s] = all_strings.count(s)
+        for k, v in strings_dict.items():
+            if v == 1:
+                unique_list.append(k)
+        unique = len(unique_list)
+        print(f"There are {unique} unique strings in your input.")
+        break
