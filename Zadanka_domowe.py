@@ -25,6 +25,11 @@ def words_counter(sentence: str) -> dict:
 # (dla odważnych - możecie również weryfikować czy dane liczbą są takie same).
 
 def greatest_number(a: int, b: int, c: int):
+    for n in [a, b, c]:
+        if a == b or a == c or b == c:
+            return "Some of the values are the same."
+        elif a == b == c:
+            return "All of the values are the same."
     largest = None
     for n in [a, b, c]:
         if largest is None:
@@ -33,11 +38,6 @@ def greatest_number(a: int, b: int, c: int):
             largest = n
         return f"The largest value is {largest}."
 
-    for n in [a, b, c]:
-        if a == b or a == c or b == c:
-            return "Some of the values are the same."
-        elif a == b == c:
-            return "All of the values are the same."
 
 # Zadanie 04
 # Napisać program, gdzie użytkownik podaje liczby całkowite i je sumuje.
