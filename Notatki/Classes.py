@@ -24,6 +24,7 @@ c1 = Car("Czerwony", 450000, "Ferrari")
 c2 = Car("Zielony", 75000, "Opel")
 print(str(c1))
 print(c1.color, c2.color)
+c1.color = "Srebrny" #w ten sposób możemy łatwo zmienić wartość
 print(c1.running)
 c1.switch()
 print(c1.running)
