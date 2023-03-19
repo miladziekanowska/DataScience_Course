@@ -41,7 +41,7 @@ class Person:
     def age(self, new_age):
         self.__age = new_age
 
-
+# dobra praktyka - nazywać gettery i settery tak jak zmienne, bo wtedy jest łatwiej i wygodniej
 
 p1 = Person("Jan", "Kowalski", 30)
 #wartości są publiczne bo możemy wyciągnąć informacje o obiekcie
