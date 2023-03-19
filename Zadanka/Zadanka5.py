@@ -56,8 +56,10 @@ class Customer(Person):
             return "You are underaged and can'r order!"
 
     def show_order(self):
-        for n in self.orders:
-            return f"{n}"
+        for e in self.orders:
+            print(e)
+
+
 
 
 p1 = Person("Jan", "Kowalski", "ul. Zielona 1 77-100 Bytów", 25)
@@ -69,3 +71,29 @@ print(str(p2))
 p2.add_order("Czekolada", 5.99)
 p2.add_order("Sok owocowy", 4.89)
 print(p2.show_order())
+
+# start - godzina rozpoczęcia seansu
+# playtime - ile sekund oglądaliśmy
+#
+# Program ma podzielić playtime na poszczególne grupy
+#
+# p = 3.5
+# s = 5.6
+#
+# 5: 0.4 (do 6)
+# 6: 1.0 (do 7)
+# 7: 1.0 (do 8)
+# 8: 1.0 (do 9)
+# 9: 0.1 (do 10) <-- p + s
+#
+# 0: 0.0 - 1.00
+# 1: 1.01 - 2.00
+# 2: 2.01 - 3.00
+# ...
+# 10: 10.01 - 11.00
+
+
+def time_split(start: float, playtime: float):
+    start_hour = int(start)
+    end = start + playtime
+    end_hour = int(end)
