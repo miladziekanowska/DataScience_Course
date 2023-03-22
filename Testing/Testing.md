@@ -39,4 +39,11 @@ More resources:
 
 Software testing is part of the quality assurance process. Testing verifies the correctness of the created software and validates whether a given system meets the client's needs. Most often associated directly with the profession of a tester, however, it is performed during the entire software development process.
 
+
+More resources:
+- [RealPython](https://realpython.com/python-testing/)
+- [Python documentation on unittest](https://docs.python.org/3/library/unittest.html)
+- [Freecodecamp](https://www.freecodecamp.org/news/how-to-write-unit-tests-for-python-functions/)
+- [Ideo (PL)](https://www.ideo.pl/firma/o-nas/nasze-publikacje/testowanie-manualne-i-automatyczne,167.html#:~:text=Testy%20automatyczne%20należy%20najpierw%20opracować,końca%2C%20opracowania%20raportu%20lub%20podsumowania)
+
 *In works*
