@@ -2,11 +2,12 @@
 
 Testing errors allows us to set a kind of warning in the code, where we might expect an error to happen.
 With the testing, we are aware of possible errors, so we set a detour around them, so even if they happen, the further code can run smoothly.
-
-`try:
+```
+try:
 	x = float(“Hello”)
 except:
-	x = (-1)`
+	x = (-1)
+```
 
 This way if we receive an error, the program won't stop running, 
 but will provide us with the designated value or print for this occasion.
