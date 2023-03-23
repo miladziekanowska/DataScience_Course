@@ -15,6 +15,7 @@ def largest_number(*args):
     except TypeError:
         print("Wystąpił problem z typem danych, wprowadź tylko dane int")
 
+largest_number(["a", "b", "c"])
 
 # Zadanie 02
 # Napisz moduł, który będzie posiadał funkcje obliczające:
