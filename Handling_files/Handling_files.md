@@ -1,5 +1,5 @@
 # Handling files
-
+---
 ## Opening files
 There are two ways of opening files. 
 ```
@@ -45,3 +45,16 @@ For this, we mainly use **w** or **a** mode in the opening. The difference is, t
 The most common commands to edit the files are:
 `write(s)`, where the string s is written in the file and also returns the number of characters written;
 `writelines(s)`, where a list of lines is written (commonly used with loops).
+
+## ETL
+
+**ETL** is a process of *extracting*, *transporting* and *loading* data from a file. 
+This can be done from any kind of file, when opened in Python code. 
+ETL is commonly used to prepare single source data for analysis. ETL is the process of extracting huge volumes of data from a variety of sources and formats and converting it to a single format before putting it into a database or destination file.
+
+To perform ETL, following steps need to be followed:
+1. Having the dataset we want to extract from and deciding what needs to be extracted, in which format, etc.
+2. Extracting the data (choosing the tables we want or the whole file)
+3. Transforming the data in desired way (changing values, applying boolean or performing operations, etc.)
+4. Loading the data, in the desired format (usually csv, for further analysis), either in the same or new file
+5. Good practice is to log the parts where we are doing ETL
