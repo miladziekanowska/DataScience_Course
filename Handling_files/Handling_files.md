@@ -32,9 +32,11 @@ with our exploration or modifications.
 In the `with open()` syntax, the file will be closed as soon as the loop or modifications
 under the syntax are done, so it's much more optimized.
 
-For reading a file, two functions are most common.
-`read(n)`, where the n amount of characters from the file will be read (we do not have to specify the n),
-and `readlines(n)`, which is similar, but returns all first n characters from each line (lines are separated by **\n**).
+New line symbol: \n  
+New line in files = text + \n  
+`read(n)` = reads n symbols  
+`readline(n)` = reads n symbols up to \n included (ends work after \n)  
+`readlines()` = saves the uploaded lines to a list. 1 element = 1 line + \n if appears  
 
 ## Editing and creating files
 
