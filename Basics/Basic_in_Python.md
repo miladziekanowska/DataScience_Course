@@ -203,6 +203,9 @@ There are a few best practices for the `input()` function:
 
 `print(n)` - will print n in console or in program
 
+With print, there are a few possibilities to print multiple variables and informations in one print.
+One of them is concatenation, the other is `.format()` method and the other is `f""`. 
+
 
 
 
