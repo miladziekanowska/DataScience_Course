@@ -1,5 +1,5 @@
 # Variables in Python
-
+---
 Python consist of **variables**, **operators**, **constants** and **reserved words**, which together create sentences - code.
 
 **Variables** are one of the key components of any programing language - it is a container for any value and behaves as the value it contains. Variables are subjects of processes and operations, functions and so on. All the variables in the program are created by the author - no variables are set in Python.
@@ -182,6 +182,26 @@ For changes to boolean data type, the rules are quite simple:
 | x = bytes(5) | bytes |
 | x = bytearray(5) | bytearray |
 | x = memoryview(bytes(5)) | memoryview |
+
+## Input() function
+
+`input(prompt)` allows any user who is using the code to submit their own data into the problem.
+
+There are a few best practices for the `input()` function:
+- the input by default will always be a string. If we would like to receive different data type, it's best to cast the input with the proper type and if we are doing operations later on with the given variable, it's best to test it for errors;
+- when creating a new function, which should process data from an input, it's not advised to put the input in the definition of function - it's much better to place the input earlier and then use the input variable we already received;
+- it's good to write the *prompt*, which will be displayed when we call for an input from the user;
+
+
+## Other useful basic functions
+
+`dir(n)` - will provide all available methods and atributes, depending on the data type (will also work well with modules and libraries)
+
+`type(n)` - will provide the correct data type of the n variable (if it's not clear or needed)
+
+`help(n)` - will provide all the available funtions to be used on the n type of variable (will also work with modules and libraries)
+
+`print(n)` - will print n in console or in program
 
 
 

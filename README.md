@@ -8,7 +8,7 @@ The notes files are full of comments, which are there so I could find that I am 
 
 ## Topics and their completeness (at least for now)
 
-- [] Basic syntax, input, data types and conversion 
+- [x] Basic syntax, input, data types and conversion 
 - [] Conditional instructions and building functions
 - [] Working with strings, str operations and formatting
 - [] Basic data structures (list, set, tuple, dictionary)
@@ -17,6 +17,6 @@ The notes files are full of comments, which are there so I could find that I am 
 - [] Modules and creating modules
 - [] Object oriented programmings
 - [] Decorators and packing arguments
-- [] Handling files in Python
+- [x] Handling files in Python
 
 That's it for now. Hope this repository will grow overtime and handle many useful tricks. 

@@ -2,11 +2,11 @@
 ---
 ## Opening files
 There are two ways of opening files. 
-```
+```python
 file = open(names.txt)
 ```
 or
-```
+```python
 with open("reduta.txt", "r", encoding="utf-8") as file:
 ```
 
@@ -60,3 +60,7 @@ To perform ETL, following steps need to be followed:
 3. Transforming the data in desired way (changing values, applying boolean or performing operations, etc.)
 4. Loading the data, in the desired format (usually csv, for further analysis), either in the same or new file
 5. Good practice is to log the parts where we are doing ETL
+
+**More resources:**
+- [Programiz](https://www.programiz.com/python-programming/file-operation)
+- [Analytics Vidhya](https://www.analyticsvidhya.com/blog/2021/06/implementing-python-to-learn-data-engineering-etl-process/)
