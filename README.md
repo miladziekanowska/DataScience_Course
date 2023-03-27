@@ -9,7 +9,7 @@ The notes files are full of comments, which are there so I could find that I am 
 ## Topics and their completeness (at least for now)
 
 - [x] Basic syntax, input, data types and conversion 
-- [] Conditional instructions and building functions
+- [x] Conditional instructions and building functions
 - [] Working with strings, str operations and formatting
 - [] Basic data structures (list, set, tuple, dictionary)
 - [] Infinite and finite loops

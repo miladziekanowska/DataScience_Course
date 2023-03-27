@@ -6,3 +6,5 @@ print(f"Wartość: {value:6.2f}") #6 oznacza tutaj ile znaków (spacji, liczb i 
 print(f"Wartość: {value:.2f}")
 print(f"Wartość {c:4d}")
 
+#to check if any symbol in a string is digit
+condition2 = any(map(str.isdigit, password))
