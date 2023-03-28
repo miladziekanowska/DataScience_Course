@@ -79,7 +79,32 @@ We can specify what delimiter character to use in the splitting.
 Useful, especially with csv tables, where we decide the delimiter.
 
 ### List comprehension
+List comprehension is a very pythonic way of creating a list with fewer syntax.
+The general syntax will look as following:
+```python
+list = [expression for item in iterable]
+```
+Using list comprehension all the values in within the list would have something
+in common, since they are all iterated in the same way. 
 
+List comprehension can also mimic some lambda function and be easier to read,
+for example for filtering.
+```python
+list = [expression for item in iterable if condition]
+```
+If we want to add the **else** after the if condition, then we need to change the order:
+```python
+list = [expression if condition else ifelse for item in iterable]
+```
+### zip()
+Another separate function to mention when dealing with lists is the `set()` function.
+It allows us to kind of merge two lists together, as long as they have the same length (if they have different lengths, the length of the shorter one will be taken into consideration).
+```python
+spiecies = ["cat", "dog", "fish"]
+names = ["Cloud", "Stan", "Bobby"]
+pets = list(zip(spiecies, names))
+```
+The output of this operation will be a list of tuples.
 ## Sets
 Sets are another data structure, very similar to lists, but with some critical
 differences, which will determine if we are using a list or a set.
@@ -104,5 +129,90 @@ The methods for sets:
 **set.clear()** -> removes all the values from the set
 
 ## Tuples
+Tuples are another data structure similar to lists.The biggest 
+difference between tuples and lines is that they are immutable, so we 
+cannot alter them. Once they are created, we cannot add to them or edit 
+the inside. This way they take up less storage, are quicker to access and 
+more efficient.
+```python
+a_tuple = (1, 4, 6, "me")
+```
+Since tuples structure is not modifiable, they are simpler and more 
+efficient in terms of the memory use and performance than lists. Our 
+program when we are making „temporary variables” we prefer tuples over lists.
+
+Tuples are represented in normal brackets (). Since the tuples are immutable,
+it is impossible to create an empty tuple and append to it. Therefore all the
+modifying list methods won't work on tuples, but we can call the positions here.
 
 ## Dictionaries
+
+Dictionaries use something that is called associative array.
+They are Python’s most powerful data collection. Dictionaries allow us 
+to do fast database-like operations in Python.
+
+Differently than the above mentioned data structures, dictionaries let us find the
+positions of the items, but differently than with lists and tuples, in dictionaries
+the item are not ordered and rather called by their **key** than the numeric position.
+
+Dictionaries are created within curly brackets {}.
+```python
+dictionary = {
+    "Mike" : 98,
+    "Harry" : 40,
+    "Judy" : 55
+} #this can be also represented in one line, but its more readable this way
+
+#OR
+
+phone_book = dict("Larry" = 486293453, "Suzan" = 294856300, "Louise" = 394586023)
+```
+In case of the above dictionary, the names represent the keys (keys are string values)
+and the numbers are the values of the dictionary. 
+### Dictionary methods
+We have a few methods to check keys and values:  
+**dictionary.keys()** -> returns all the keys in the dictionary as a list  
+**dictionary.values()** -> returns all the values in the dictionary as a list  
+**dictionary.items()** -> returns all the keys and their values in dictionaty as a list of tuples (key, value)
+
+The keys cannot have duplicates while the values can have as many duplicates as desired.
+And while keys are strings (it's not a good practice to make them int or float)
+the values can be any data type.
+
+Other useful methods for dictionaries would be:  
+**dictionary.get("key")** -> will provide the value assigned to the key (if the key is not found, it will return None)  
+**dictionary.update({"key" : "value"})** -> will append the key value in the dictionary  or update the existing pair  
+**dictionary.pop("key")** -> will remove the key and value from the dictionary and store the removed value (only value!)  
+**dictionary.popitem()** -> will remove last item that was inserted from the dictionary and store the key value tuple  
+**dictionary.clear()** -> will clear the whole dictionary  
+
+Instead of appending new values with `.update()` or updating existing value,
+we can also use the following syntax:  
+`dictionary["key"] = value`  
+Similarly, if we want to delete an item (this doesn't remember the deleted value):  
+`del dictionary["key"] = value`  
+### Looping through dictionaries
+Similarly to all data structures we can loop through the dictionary.
+For that we usually use the methods related to the keys and values. 
+While looping through only keys and only values works similarly as with lists or strings,
+when looping through the items, the structure of the loop will be slightly different:
+```python
+for key, value in dictionary.items():
+    print(f"{key}: {value}")
+```
+If we would like to use a list or a tuple as a set of keys to create a new dictionary
+we would have to create a loop which will assign value to our new keys. 
+```python
+spiecies = ["cat", "dog", "fish"]
+names = ["Cloud", "Stan", "Bobby"]
+
+animals_1 = {}
+animals_2
+for i in range(len(spiecies)):
+    animals_1[spiecies[i]] = names[i]
+#OR
+animals_2[spiecies[i]] = animals = dict(zip(spiecies, names))
+```
+Instead of joining two lists, the values can be assigned differently as well,
+using math or input.
+

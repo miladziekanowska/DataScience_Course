@@ -10,10 +10,10 @@ The notes files are full of comments, which are there so I could find that I am 
 
 - [x] Basic syntax, input, data types and conversion 
 - [x] Conditional instructions and building functions
-- [] Working with strings, str operations and formatting
-- [] Basic data structures (list, set, tuple, dictionary)
+- [x] Working with strings, str operations and formatting
+- [x] Basic data structures (list, set, tuple, dictionary)
 - [] Infinite and finite loops
-- [] Testing errors and code testing
+- [x] Testing errors and code testing
 - [] Modules and creating modules
 - [] Object oriented programmings
 - [] Decorators and packing arguments
