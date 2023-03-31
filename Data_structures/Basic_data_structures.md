@@ -66,7 +66,7 @@ If you've read lots of Python code, you might have seen the following trick to s
 In many cases, we will turn strings into lists (or other data structures in general).
 This will be very useful when dealing with files, since all files are being read as strings.
 ```python
-abc = "With thre words"
+abc = "With three words"
 stuff = abc.split()
 #here we turn a string into a list
 print(stuff)
@@ -216,3 +216,13 @@ animals_2[spiecies[i]] = animals = dict(zip(spiecies, names))
 Instead of joining two lists, the values can be assigned differently as well,
 using math or input.
 
+## Nesting
+We can talk about nested lists or nested anything when we have one data structure
+appended within another one. When dealing with nested loops, we need to use the positioning as
+many times as deep is the element. This will come in handy when dealing with 
+Numpy Arrays.
+```python
+nested_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# we want to access 5
+print(nested_list[1][1])
+```

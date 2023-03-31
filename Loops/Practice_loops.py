@@ -1,49 +1,79 @@
-# Napisz funkcję, która przyjmuja łańcuch znakowy
-#     (dla ułtawienia: same małe litery)
-# Przykładowo: alamakotaakotmapierdolca
-# Funkcja ma zwrócić słownik (return), który zawiera informacje w postaci:
-#     Klucz - litera
-#     Wartość - ilość wystąpień litery w tekście
-# Przykładowo: dla klucza "l" wartości to 2
+# Task 1
+# Write a function which takes in a string. The function returns a dictionary with following schema:
+#     key - letter
+#     value - how many letters are there
 
+n = str(input("Wprowadź wyrażenie: "))
 
-slowo = str(input("Wprowadź wyrażenie: "))
-litery = {}
-for l in range(len(slowo)):
-    if slowo[l] not in litery.keys():
-        litery[slowo[l]] = 1
-    else:
-        litery[slowo[l]] = litery[slowo[l]] + 1
+def letter_counter(word):
+    letters = {}
+    for i in word.lower():
+        if i not in letters.keys():
+            letters[i] = word.count(i)
+    print(letters)
 
-print(slowo, litery)
+letter_counter(n)
 
+# Task 2
+# Write a program which given the users input (int) returns all even values from 0 to n (included)
 
-# Napisz program, gdzie użytkownik podaje liczbę n (int)
-# Następnie program wyświetla wszystkie liczby parzyste od 0 do n (włącznie)
+number = int(input("Input your number: "))
+a = 0
+while a <= number:
+    print(a)
+    a += 2
 
-liczba = int(input("Wprowadź swoją liczbę: "))
-n = 0
-while n <= liczba:
-    print(n)
-    n += 2
-
-# Wykorzystując pętle while, program wyświetli wszystkie pierwiastki
-#     liczb od 10 do 2 (włącznie) (n ** 0.5)
+# Task 3
+# Using the while loop write a program which will diplay all roots from 10 to 2, descending
 
 a = 10
 while a in range(10, 1, -1):
-    print (a ** 0.5)
+    print (f"The square root for {a} is {a ** 0.5}.")
     a -= 1
 
-# Napisz program, który sumuje wszystkie liczby całkowite z danego przedziału
-# Początek i koniec podaje użytkownik
-# Np. start = 10, end = 12, wynik - 33
+
+# Task 4
+# Write a program, which sums up all the integers from the given range. The user inputs the begining and end
 
 start_value = int(input("Start value: "))
 end_value = int(input("End value: "))
 start_sum = 0
 
-for b in range(start_value, end_value +1):
+for b in range(start_value, end_value + 1):
      start_sum += b
 
 print(start_sum)
+
+
+# Task 5
+# Using the given list of tuples, create a dictionary using the following schema:
+#   key - first tuple value
+#   value - second tuple value divided by 50
+# If the key is already in the dictionary, it should be skipped
+
+data = [
+    ("Adam", 750),
+    ("Ewa", 250),
+    ("Jakub", 200),
+    ("Elżbieta", 1000),
+    ("Adam", 400),
+    ("Ewa", 300)
+]
+
+dictionary = {}
+
+for person in range(len(data)):
+    if data[person][0] not in dictionary.keys():
+        dictionary[data[person][0]] = data[person][1] / 50
+print(dictionary)
+
+# Task 6
+# Create a function which will recognize if a given wors is an izogram or not.
+
+def izogram(word: str) -> bool:
+    letters = set()
+    for w in word.lower():
+       if w in letters:
+           return False
+       letters.add(w)
+    return True
