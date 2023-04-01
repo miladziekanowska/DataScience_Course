@@ -1,23 +1,27 @@
-# 1. Napisz funkcję o nazwie add_contacts, która przyjmuje następujące argumenty:
-#     - słownik z kontaktami (dict)
-#     - nazwę klucza (str)
-#     - nr telefonu (str)
-#     Następnie funkcja wypisuje na konsoli komunikat:
-#     - kontakt dodanom jeśli dodaliśmy kontakt,
-#     - kontakt istnieje, jeśli podany klucz istnieje w słowniku
-#     Funkcja niczenie nie zwraca
-
-# 1.
-
- # def add_contact(contacts: dict, name: str, phone: str):
- #     if name not in contacts.name():
- #         contacts[name] = phone
- #         print("Kontakt dodano.")
- #    else: print("Kontakt istnieje.")
-
+# Task 1
+# Create a function called add_contacts, which will intake following arguments:
+#   - dictionary with contacts
+#   - key name
+#   - phone number (string).
+# If the contact is in the dictionary, return that it already exists;
+# If the contact is not in the dictionary, add it and confirm that.
+# The function does not return anything.
+#
+def add_contact(contacts: dict, name: str, phone: str) -> None:
+    if name not in contacts.keys():
+        contacts[name] = phone
+        print("Contact has been added!")
+    else:
+        print("This person is already in contacts!")
 
 
-# Mamy listę danych:
+# Task 2
+# Given the dictionary "data", create a new dictionary from these tuples where:
+#   key = first value
+#   value = second value / 50
+# Program should skip all the duplicates.
+
+
 data = [
     ("Adam", 750),
     ("Ewa", 250),
@@ -26,40 +30,25 @@ data = [
     ("Adam", 400),
     ("Ewa", 300)
 ]
-#
-# Należy przepisać powyższe krotki do słownika danych według poniższego schematu:
-#     klucz - 1 wartość krotki
-#     wartość - 2 wartość krotki podzielona przez 50
-#
-#     Przykładowo dla pierwsze elementu listy powinnyśmy otrzymać wpis:
-#     "Adam": 15
-#
-#     Program ma pomijać klucze które są duplikowane (wchodzi pierwsze wystąpienie),
-#     czyli drugi "Adam" powinien być pominięty w przetwarzaniu.
 
+dataset = {}
 
-#
-# dataset = {}
-# for i in range(len(data)):
-#
-#
-# for value in dataset:
-#     value = value / 50
-#
-# print(dataset)
+for i in range(len(data)):
+    if data[i][0] not in dataset.keys():
+        dataset[data[i][0]] = data[i][1] / 50
 
+print(dataset)
 
+# Task 3
+# Write a function named manage_list, which intakes two arguments:
+#     - command: add and delete;
+#     - value
+# If add is used, we add the value to the list, and if it's delete, it should
+# be deleted using pop().
+# The function does not return anything
 
-# 4. Napisz funkcję manage_list, która przyjmuje dwa argumenty:
-#     - Opcja: dodaj, usun
-#     - Wartość
-# Jeżeli wybraliśmy dodaj, wykonany jest append
-# Jeżeli usun - wykonujemy pop()
-# Funkcja niczego nie zwraca
-
-#4.
-def manage_list(command, value):
-    if command == "dodaj":
+def manage_list(command: string, value: int) -> None:
+    if command == "add":
          list.append(value)
-    elif command == "usun":
-         list.pop()
+    elif command == "delete":
+         list.pop(value)
