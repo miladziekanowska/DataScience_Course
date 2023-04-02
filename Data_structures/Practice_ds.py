@@ -47,7 +47,7 @@ print(dataset)
 # be deleted using pop().
 # The function does not return anything
 
-def manage_list(command: string, value: int) -> None:
+def manage_list(command: str, value: int) -> None:
     if command == "add":
          list.append(value)
     elif command == "delete":

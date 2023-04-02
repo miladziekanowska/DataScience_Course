@@ -1,5 +1,5 @@
 class Car:
-    #określamy z czego składa się obiekt
+    #we define what goes into the object
     def __init__(self, color, price, brand):
         self.color = color
         self.price = price
@@ -7,7 +7,7 @@ class Car:
         self.running = False
         self.spec = []
 
-    #określamy co ma się wyświetlać, jeśli wywołamy obiekt jako to co między __
+    #if we want to define what will appear when we call for the object
     def __str__(self):
         return f"{self.brand}, {self.color}, {self.price}"
 
@@ -20,14 +20,14 @@ class Car:
         else:
             self.running = True
 
-c1 = Car("Czerwony", 450000, "Ferrari")
-c2 = Car("Zielony", 75000, "Opel")
+c1 = Car("Red", 450000, "Ferrari")
+c2 = Car("Green", 75000, "Opel")
 print(str(c1))
 print(c1.color, c2.color)
-c1.color = "Srebrny" #w ten sposób możemy łatwo zmienić wartość
+c1.color = "Silver" #this way we can easily change the value
 print(c1.running)
 c1.switch()
-print(c1.running)
+# print(c1.running)
 
 
 class Student:
@@ -52,6 +52,7 @@ class Student:
 
     def __float__(self):
         return self.mean
+
 
 s1 = Student("Miła", "Dziekanowska")
 s1.add_grade(4.0)

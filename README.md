@@ -12,10 +12,10 @@ The notes files are full of comments, which are there so I could find that I am 
 - [x] Conditional instructions and building functions
 - [x] Working with strings, str operations and formatting
 - [x] Basic data structures (list, set, tuple, dictionary)
-- [] Infinite and finite loops
+- [x] Infinite and finite loops
 - [x] Testing errors and code testing
-- [] Modules and creating modules
-- [] Object oriented programmings
+- [x] Modules and creating modules
+- [x] Object oriented programmings
 - [] Decorators and packing arguments
 - [x] Handling files in Python
 
