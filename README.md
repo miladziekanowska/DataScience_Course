@@ -16,7 +16,7 @@ The notes files are full of comments, which are there so I could find that I am 
 - [x] Testing errors and code testing
 - [x] Modules and creating modules
 - [x] Object oriented programmings
-- [] Decorators and packing arguments
+- [x] Decorators and packing arguments
 - [x] Handling files in Python
 
 That's it for now. Hope this repository will grow overtime and handle many useful tricks. 
