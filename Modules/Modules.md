@@ -69,3 +69,22 @@ languages. [Python documentation](https://docs.python.org/3/library/unittest.htm
 **itertools** - this module standardizes a core set of fast, memory 
 efficient tools that are useful by themselves or in combination.
 [Python documentation](https://docs.python.org/3/library/itertools.html), [GeeksForGeeks](https://www.geeksforgeeks.org/python-itertools/), [Youtube](https://www.youtube.com/watch?v=p8FUoSIyIVY).
+
+**json** - JavaScript Object Notation. Exposes an API familiar to users of the standard library marshal and pickle modules. [Python documentation](https://docs.python.org/3/library/json.html)
+
+## Using aliases for module functions
+
+This is another way to secure not overwriting imported function from modules
+and it may make our code much cleaner.
+```python
+from figures.flat import *
+
+aliases = {
+    "ra": rectangle_area,
+    "rc": rectangle_circuit
+}
+
+# rectangle_area(10, 10)
+aliases.get("XX", print)(10, 10)
+```
+

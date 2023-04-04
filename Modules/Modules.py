@@ -1,10 +1,7 @@
-#najlepsza forma importu
+#best import option
 from math import sqrt
-#unikamy importowania całych bibliotek przez import math albo *, dla czytelności i pamięci
+#it's best to avoid importing whole modules and liblaries if we are using a snippit of it
 
-#aliasowanie i importowanie własnych skryptów
-
-# staramy się nie tworzyc modułów bez korzystywania innych modułów
 print(sqrt(4))
 
 print(rectangle_area(4,5))
