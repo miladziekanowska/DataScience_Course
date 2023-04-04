@@ -12,13 +12,13 @@ x = 10
 
 try:
     print(x / 0)
-except ZeroDivisionError:   # expect: <-- instrukcje dla wystąpienia dowolnego błędu
-    print("Próbowałeś/aś dzielić przez zero.")
+except ZeroDivisionError:   # expect: <-- instructions for any error
+    print("You have tried to divide by 0.")
 finally:
-    # Wykonaj to zawsze na końcu - niezależnie od powyższych bloków
-    print("WYKONAŁEM SIĘ!")
+    # Do it everytime at the end, no matter if there are any errors
+    print("I'M DONE")
 
-a = [10, 20, 3, 4, "Ala ma kota", True, 3, 4, 12, "Piesek", "XD", 20]
+a = [10, 20, 3, 4, "She has a cat", True, 3, 4, 12, "Doggy", "XD", 20]
 errors_value = []
 
 for i in range(len(a)):
@@ -32,27 +32,27 @@ for i in range(len(a)):
 
 try:
     print(10 / 0)
-    print("Ala ma " + 5 + "kotów.")
+    print("She has " + 5 + "cats.")
 except ZeroDivisionError:
-    print("Próbowano dzielić przez zero")
+    print("Division by 0 detected")
 except TypeError:
-    print("Wystąpił problem z typem danych")
+    print("There is an error with your data type")
 
-# Do zadania nr 4 z pracy domowej dopisz zabezpeczenie, jeżeli użytkownik poda
-# informację, której nie można konwertować na int
 
+# Example
+# To our function add the try... except if the user provides an input that cannot be converted to int
 try:
-    n = int(input("Podaj liczbę: "))
+    n = int(input("Input a number: "))
     summary = 0
 
     while n >= 0:
         summary += n
-        n = int(input("Podaj liczbę: "))
+        n = int(input("Input a number: "))
 
-    print(f"Suma podanych liczb to: {summary}")
+    print(f"The sum of your values is: {summary}")
 
 except ValueError:
-    print("Podano błędną informację")
+    print("Wrong input was given. Did you try to input anything containing letters?")
 
 
 
